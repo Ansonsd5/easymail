@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.com-btn{
+  transition: filter 0.3s ease;
+  
+}
+
+.com-btn:is(:hover, :focus-visible){
+  filter: brightness(115%);
+}
+.com-btn:active{
+  filter: brightness(85%);
+}
+
+.com-btn:disabled{
+  filter: brightness(70%);
+  opacity: 0.5;
+  cursor: not-allowed;
+
+}
+
+.text-input:focus{
+  outline: none;
+}
